@@ -1,30 +1,37 @@
 import java.util.Scanner;
 
-public class PA1pt2 {
 
-	public static void main(String[] args) {
-		Scanner userInput = new Scanner(System.in);
+public class PA1 {
+public static void main(String[] args) {
+	
+	Scanner userInput = new Scanner(System.in);
+	
+	int yards, feet, inches;
+	int sumYards, sumFeet, sumInches;
+	int sumTotal;
+	System.out.println("Enter Number of Yards Below:");
+		yards = userInput.nextInt();
+			sumYards = yards*36;
+	// Above is the program to collect the amount of yards from the User
 		
-
-		
-		int yards, feet, inches;
-
-	System.out.println("Enter the Amount of inches Below");
+	System.out.println("Enter Number of feet below:");
+		feet = userInput.nextInt();
+			sumFeet = feet*12;
+			
+	// Above is the program to collect the amount of Feet from the user. 
+			
+			
+	System.out.println("Enter Number of Inches Below:");
 		inches = userInput.nextInt();
-		
-		//This is the end of the Collection. The rest of the code will be the conversion
-		
-			yards = inches / 36;
-			inches = inches % 36;
+			sumInches = inches; 
 			
-			feet = inches / 12;
-			inches = inches % 12;
+		//Above is the program to collect amount of inches from the User
 			
-		System.out.println("The number of Yards is " + yards);
-		
-		System.out.println("The number of feet is: " + feet);
-		
-		System.out.println("The number of Inches is: " + inches);
-	}
-
+	sumTotal = sumYards + sumFeet + sumInches;
+			
+	System.out.println("The Total Number of inches is:" + sumTotal);
+	
+	
+	
+}
 }
